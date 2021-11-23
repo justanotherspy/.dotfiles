@@ -20,7 +20,7 @@ alias vim='nvim'
 alias cat='bat'
 
 # make nix available
-if [ -e /home/daniel/.nix-profile/etc/profile.d/nix.sh ]; then . /home/daniel/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+if [ -e ~/.nix-profile/etc/profile.d/nix.sh ]; then . ~/.nix-profile/etc/profile.d/nix.sh; fi
 
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
