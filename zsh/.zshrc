@@ -18,7 +18,10 @@ source ~/.zsh_plugins.sh
 alias ls='exa -al'
 alias vim='nvim'
 alias cat='bat'
-
+alias ga='git add .'
+alias gp='git push'
+alias gs='git status'
+alias gc='git commit -m'
 
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
