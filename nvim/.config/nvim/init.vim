@@ -22,20 +22,26 @@ set nowrap
 set splitbelow
 set splitright
 set hidden
-set scrolloff=8
+set scrolloff=10
 set noshowmode
 set updatetime=250
 set encoding=UTF-8
 set mouse=a
-
+set autoindent smartindent
+set clipboard=unnamed
 
 " --- Plugins
 
 call plug#begin('~/.config/nvim/plugged')
 
-" -- define plugins here
-
 Plug 'sainnhe/gruvbox-material'
+
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
+Plug 'preservim/nerdtree'
+
+Plug 'editorconfig/editorconfig-vim'
 
 call plug#end()
 
@@ -44,3 +50,10 @@ call plug#end()
 set background=dark
 set termguicolors
 colorscheme gruvbox-material
+
+" --- Key Mappings
+
+map <C-o> :NERDTreeToggle<CR>
+map ; :Files<CR>
+
+
